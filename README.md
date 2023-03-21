@@ -9,4 +9,4 @@
 ## Author
 
 - GitHub Repo - [Giorgi Gurgenidze](https://github.com/gurgenidzegiorgi/Results-Summery-Component)
-- Live URL - [GitHub](https://www.frontendmentor.io/profile/yourusername)
+- Live URL - [GitHub](https://gurgenidzegiorgi.github.io/Results-Summery-Component/)
