@@ -1,0 +1,312 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: local("Hanken Grotesk"),
+    url("../static/HankenGrotesk-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: local("Hanken Grotesk"),
+    url("../static/fonts/HankenGrotesk-ExtraBold.ttf");
+  font-style: normal;
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: local("Hanken Grotesk"), url("../static/fonts/HankenGrotesk-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: local("Hanken Grotesk"), url("../static/fonts/HankenGrotesk-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ecf2ff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-div {
+  background-color: #fff;
+  box-shadow: 0px 3rem 6rem rgba(61, 108, 236, 0.15);
+  border-radius: 3.2rem;
+}
+
+.result-div {
+  background: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+  border-radius: 3.2rem;
+  padding: 6.4rem 5.7rem 4rem 5.7rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: -4rem;
+}
+
+.result-div h4 {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #cac9ff;
+}
+
+.result-score {
+  background: linear-gradient(
+    180deg,
+    #4d21c9 0%,
+    rgba(37, 33, 201, 0) 100%,
+    rgba(37, 33, 201, 0) 100%
+  );
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  clip-path: circle();
+  padding: 4rem;
+  margin: 2rem 0;
+}
+
+.result-score .small-num {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #cac9ff;
+  mix-blend-mode: normal;
+  opacity: 0.52;
+}
+
+.result-score .big-num {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 5.6rem;
+  line-height: 7.2rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: unset !important;
+}
+
+.result-content h2 {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.result-content p {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center;
+  color: #cac9ff;
+}
+
+.summary-div {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  padding-top: 0;
+  margin-top: 2.4rem;
+}
+
+.summary-div h4 {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #303b59;
+  margin-bottom: 2.4rem;
+}
+
+.summary-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #ff5555;
+  padding: 1.8rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.summary-box:nth-child(3) {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #ffb21e;
+}
+.summary-box:nth-child(3) .summary-text {
+  color: #ffb21e;
+}
+.summary-box:nth-child(4) {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #00bb8f;
+}
+.summary-box:nth-child(4) .summary-text {
+  color: #00bb8f;
+}
+.summary-box:nth-child(5) {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #1125d6;
+  margin-bottom: unset;
+}
+.summary-box:nth-child(5) .summary-text {
+  color: #1125d6;
+}
+
+.summary-box .summary-tag {
+  display: flex;
+  gap: 1.617rem;
+}
+
+.summary-box .summary-text {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #ff5555;
+}
+
+.summary-box .summary-score {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: right;
+  color: #303b59;
+}
+
+.summary-score span {
+  opacity: 0.5;
+}
+
+.summary-div button {
+  background: #303b59;
+  border-radius: 12.8rem;
+  color: white;
+  border: none;
+  padding: 1.7rem 0;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  margin-top: 1.6rem;
+}
+
+.summary-div button:hover {
+  background: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+  transition: background 0.3s ease;
+}
+
+@media (min-width: 90em) {
+  .main-div {
+    display: flex;
+    width: 73.5rem;
+    align-items: center;
+  }
+
+  .result-div {
+    margin-top: unset;
+    padding: 5.5rem;
+    padding-top: 3.8rem;
+    align-items: center;
+    flex-basis: min-content;
+  }
+  .result-div h4 {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+  }
+
+  .result-score {
+    padding: 8rem;
+    margin-bottom: 2.8rem;
+    margin-top: 3.5rem;
+  }
+  .result-score .small-num {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .result-score .big-num {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
+  .result-content h2 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .result-content p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  .summary-div {
+    padding: 4rem;
+    padding-bottom: 4.6rem;
+    margin-top: unset;
+  }
+
+  .summary-div h4 {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .summary-box {
+    gap: 8rem;
+  }
+  .summary-box .summary-text {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .summary-box .summary-score {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .summary-div button {
+    margin-top: 4.1rem;
+  }
+}
